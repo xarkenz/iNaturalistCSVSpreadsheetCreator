@@ -1,7 +1,7 @@
 import gspread
 
-gc = gspread.service_account(filename='client_secret_updated.json')
-sh = gc.open("Raw Scraped Data - Plearth")
+gc = gspread.service_account(filename='CLIENT_SECRET.json')
+sh = gc.open("SPREADSHEET NAME")
 def updateSheet(speciesCount, parkName):
     count = 6
     countList = []
