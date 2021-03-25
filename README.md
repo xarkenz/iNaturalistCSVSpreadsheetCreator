@@ -3,6 +3,13 @@ This program takes a CSV generated from iNaturalist and formats it to a spreadsh
 
 Instructions:
 
+First of all, if you are comfortable using Python 3 and installing pip modules, do it that way. The two libabries you will have to install are "gspread" and "csv". If you are not comfortable with Python, or never used Python before, I recommend using Repl.it. here is a link to the repl: https://replit.com/@Panzerschwein/iNaturalistSpreadSheetFormatter#main.py
+There should be a blue button that says "fork" on the page when you go to the link. click it. (You may have to login in or create an account if you haven't already). 
+If you have already finished with the rest of the steps in this README, click the 3 dots on the files tab, and choose "Upload files". Choose "client_secret.json" and your csv file that you extracted.
+Lastly, select main.py, and hit Run at the top of the page. input the data when prompted in the termanil on the right side of the screen, and once the code finishes, your spreadsheet should be updated!
+
+
+
 Exporting the CSV File:
 
 To export the iNaturalist Data, go to https://www.inaturalist.org/observations/export.
@@ -14,7 +21,7 @@ If you scroll down to "Preview", the number should match the number of observati
 Now scroll down to Columns, and deselect everything in Basic and Geo. Under Taxon, the only two things that should be selected are "scientific_name" and "common_name". Nothing else needs to be selected. 
 Hit "Create Export" and wait a minute or two as it creates your data. When it finishes, there should be a button to download it at the bottom of the page under "Recent Exports"
 Download the zip folder and extract it. Inside, there should be a csv file. rename the file to something simple. I renamed mine to roy.csv, because my park is Roy G. Guerrero. 
-Place that csv file in the same folder with the code and the json file. 
+Place that csv file in the same folder with the code and the json file (or just keep it in your download folder if you are using repl).
 
 
 Getting the Google Sheets API Key
@@ -45,7 +52,7 @@ The service account ID generates automatically based on the service account name
 For Key Type, make sure JSON is selected. 
 Hit "Continue"
 It should then prompt you to download a json file, download it, and change the file name to "client_secret.json"
-Put that json file in the same folder with the rest of the code.
+Put that json file in the same folder with the rest of the code (or keep it in your download folder if you are using repl).
 Next, open up the json file with Notepad and look for the line, "client_email". Make sure to share the Google Sheets that you will be using to store your data with that email. 
 Now, navigate to spreadsheetUpdate.py and change SPREADSHEET NAME to what ever your spreadsheet is called in Google Drive. If your spreadsheet is named "Plearth Data" the line should look like this: sh = gc.open("Plearth Data")
 
