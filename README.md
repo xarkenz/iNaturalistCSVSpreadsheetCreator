@@ -1,6 +1,8 @@
 # iNaturalistCSVSpreadsheetCreator
 This program takes a CSV generated from iNaturalist and formats it to a spreadsheet. Read README for instructions.
 
+If you enounter any problems, you can email me at otter.kokinda@gmail.com, but the best way to reach me is through Discord at Panzerschwein#1162. If you message me there, I will probably resond within minutes. 
+
 Instructions:
 
 First of all, if you are comfortable using Python 3 and installing pip modules, do it that way. The two libabries you will have to install are "gspread" and "csv". If you are not comfortable with Python, or never used Python before, I recommend using Repl.it. here is a link to the repl: https://replit.com/@Panzerschwein/iNaturalistSpreadSheetFormatter#main.py
