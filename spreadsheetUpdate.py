@@ -1,6 +1,6 @@
 import gspread
 
-gc = gspread.service_account(filename='CLIENT_SECRET.json')
+gc = gspread.service_account(filename='client_secret.json')
 sh = gc.open("SPREADSHEET NAME")
 def updateSheet(speciesCount, parkName):
     count = 6
