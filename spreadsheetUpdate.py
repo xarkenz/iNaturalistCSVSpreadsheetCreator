@@ -5,7 +5,7 @@ sh = gc.open("SPREADSHEET NAME")
 def updateSheet(speciesCount, parkName):
     count = 6
     countList = []
-    parkSheet = parkName
+    parkSheet = sh.get_worksheet(parkName)
 
     for i in speciesCount:
         countNameTuple = [speciesCount[i][1], i, speciesCount[i][0]]
