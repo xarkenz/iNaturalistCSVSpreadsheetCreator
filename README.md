@@ -27,6 +27,7 @@ Place that csv file in the same folder with the code and the json file (or just 
 
 
 Getting the Google Sheets API Key
+**Make sure you use a personal gmail for this section, as AustinISD restricts the Google Cloud Platform Service for student accounts**
 
 First you will have to create a Google Sheets API key. To do that you will have to create a new project at this link here: https://console.cloud.google.com/apis/api/drive.googleapis.com
 In the top left, click "New Project" and call it whatever you want.
