@@ -30,9 +30,13 @@ Getting the Google Sheets API Key
 
 **Make sure you use a personal gmail for this section, as AustinISD restricts the Google Cloud Platform Service for student accounts**
 
-First you will have to create a Google Sheets API key. To do that you will have to create a new project at this link here: https://console.cloud.google.com/apis/api/drive.googleapis.com
+First you will have to create a Google Sheets API key. To do that you will have to create a new project at this link here: 
+https://console.cloud.google.com/apis/dashboard
 In the top left, click "New Project" and call it whatever you want.
 Next, hit "Enable APIs and Services"
+Search for Google Drive API, click it, then hit "Enable"
+Go back to the dashboard (an easy way is to just repastw this link: https://console.cloud.google.com/apis/dashboard)
+Then hit "Enable APIs and Services"
 Search for Google Sheets API, click it, then hit "Enable"
 Then, navigate to the "Credentials" tab on the sidebar and click "Create Credentials", and select "Help me choose"
 Answer the following questions with the same answers as below:
