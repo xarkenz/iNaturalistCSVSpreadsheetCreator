@@ -1,7 +1,7 @@
 import gspread
 
 gc = gspread.service_account(filename='client_secret.json')
-sh = gc.open("SPREADSHEET NAME")
+sh = gc.open("SPREADSHEET NAME") #change SPREADSHEET NAME to the name of your spreadsheet that you want to edit
 def updateSheet(speciesCount, parkName):
     count = 6
     countList = []
