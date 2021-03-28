@@ -1,5 +1,6 @@
+
 import gspread
-from webScraper import decodeCSV
+from webScraper import decodeCSV, crossReference
 from spreadsheetUpdate import updateSheet
 specificWorksheet = int(input("""What is the index of the worksheet that you want to write the data to?
 (0 if its the first sheet on the spreadsheet, 1 if its the second and so on)
@@ -7,4 +8,5 @@ specificWorksheet = int(input("""What is the index of the worksheet that you wan
 csvFile = input("""What is the name of the csv file that you want to read? (ex. bob.csv)
 > """)
 count, names = decodeCSV(csvFile)
+count = crossReference(count)
 updateSheet(count, specificWorksheet)
