@@ -5,7 +5,7 @@ If you enounter any problems, you can email me at otter.kokinda@gmail.com, but t
 
 Instructions:
 
-First of all, if you are comfortable using Python 3 and installing pip modules, do it that way. The two libabries you will have to install are "gspread" and "csv". If you are not comfortable with Python, or never used Python before, I recommend using Repl.it. here is a link to the repl: https://replit.com/@Panzerschwein/iNaturalistSpreadSheetFormatter#main.py
+First of all, if you are comfortable using Python 3 and installing pip modules, do it that way. The three libabries you will have to install are "gspread", "bs4" and "csv". If you are not comfortable with Python, or never used Python before, I recommend using Repl.it. here is a link to the repl: https://replit.com/@Panzerschwein/iNaturalistSpreadSheetFormatter#main.py
 There should be a blue button that says "fork" on the page when you go to the link. click it. (You may have to login in or create an account if you haven't already). 
 If you have already finished with the rest of the steps in this README, click the 3 dots on the files tab, and choose "Upload files". Choose "client_secret.json" and your csv file that you extracted.
 Lastly, select main.py, and hit Run at the top of the page. input the data when prompted in the termanil on the right side of the screen, and once the code finishes, your spreadsheet should be updated!
