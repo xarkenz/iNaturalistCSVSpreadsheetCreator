@@ -16,7 +16,7 @@ Exporting the CSV File:
 
 To export the iNaturalist Data, go to https://www.inaturalist.org/observations/export.
 Open another tab and pull up the Observation page for your park. I did Guerrero Park, so the URL looks like this: https://www.inaturalist.org/observations?place_id=144488&quality_grade=research&verifiable=any&view=species&iconic_taxa=Plantae
-Notice the "place_id=" parameter in the URL string. Copy that parameter into the search bar of the export page. For me, I would copy "place_id=144488".
+Notice the "place_id=" parameter in the URL string. Copy that parameter into the search bar(the one under "Create a Query" not the one that says "search" next to it) of the export page. For me, I would copy "place_id=144488".
 Next, under quality grade, select "Research". For Captive / Cultivated, select "No". Leave everything else in the filter section the same. 
 Under "Show only" select the plant leaf. It should be the 9th one. This will restrict the data to plants, which is what you want. 
 If you scroll down to "Preview", the number should match the number of observations of plants in your park. For me, the number is "1-30 of 1541" and there are 1541 observations in my park
