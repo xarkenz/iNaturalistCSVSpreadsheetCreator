@@ -5,7 +5,7 @@ specificWorksheet = int(input("""What is the index of the worksheet that you wan
 > """))
 csvFile = input("""What is the name of the csv file that you want to read? (ex. bob.csv)
 > """)
-count, names = decodeCSV(csvFile)
+count = decodeCSV(csvFile)
 enable = input("""Would you like to enable Sorting Mode? (y/n) Sorting mode will automatically eliminate plants that are not woody plants, and leave you with a smaller dataset to go through.
 > """)
 if enable.lower() == 'y' or enable.lower() == 'yes':
