@@ -3,22 +3,21 @@ from bs4 import BeautifulSoup
 import requests
 def decodeCSV(csvFile):
     uniqueCount = {}
-    normalName = {}
     f = open(csvFile)
     csv_f = csv.reader(f)
     for row in csv_f:
-        normalName[row[0]] = row[1]
         if row[0] in uniqueCount:
             #uniqueCount[row[0]] = uniqueCount[row[0]][0] + 1
             tuple1 = uniqueCount[row[0]]
             x = tuple1[0]
             y = tuple1[1]
             x = x+1
-            a = (x,y)
+            a = (x, y)
             uniqueCount[row[0]] = a
         else:
             uniqueCount[row[0]] = (1, row[1])
-    return uniqueCount, normalName
+    return uniqueCount
+
 
 def crossReference(uniqueCount):
     updatedDict = {}
@@ -47,7 +46,5 @@ def crossReference(uniqueCount):
             y = y.lower()
             if 'shrub' in y or 'tree' in y or ' liana' in y or 'shrub' in y or 'tree' in y or 'liana ' in y or 'woody' in y or 'vine' in y or 'bush' in y:
                 updatedDict[i] = uniqueCount[i]
-                print(True)
-
 
     return updatedDict
