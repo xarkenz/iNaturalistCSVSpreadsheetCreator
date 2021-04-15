@@ -68,6 +68,6 @@ Next, open up the json file with Notepad and look for the line, "client_email". 
 
 FINAL STEPS:
 
-Now, navigate to spreadsheetUpdate.py and change SPREADSHEET NAME to what ever your spreadsheet is called in Google Drive. If your spreadsheet is named "Plearth Data" the line should look like this: sh = gc.open("Plearth Data")
+Now, navigate to spreadsheetUpdate.py and change SPREADSHEET NAME to what ever your Google Spreadsheet is called in Google Drive. If your Google Spreadsheet is named "Plearth Data" the line should look like this: sh = gc.open("Plearth Data")
 
 
