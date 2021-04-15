@@ -31,7 +31,7 @@ GETTING THE GOOGLE SHEETS API KEY
 
 **Make sure you use a personal gmail for this section, as AustinISD restricts the Google Cloud Platform Service for student accounts**
 
-This section has been having a lot of problems for some reason, I think Google has changed the way they manage their Cloud Dashboard, so I uploaded a my own "client_secret.json" file for you to use instead. Make sure to share the spreasheet you are doing your data on with this email: plearth-shared-scraper@test-project-number-2-310618.iam.gserviceaccount.com  . After you do that, skip this section and go to the FINAL STEPS section at the bottom of the page. I did leave this section in case you wanted to try it out for yourself, but I would highy recommend just using the file I uploaded. 
+This section has been having a lot of problems for some reason, I think Google has changed the way they manage their Cloud Dashboard, so if for some reason you are unable to complete this section, please message on Discord at Panzerschwein#1162 and I can give you a hand.
 
 First you will have to create a Google Sheets API key. To do that you will have to create a new project at this link here: 
 https://console.cloud.google.com/apis/dashboard
