@@ -5,7 +5,7 @@ IT DOES NOT DO ALL THE WORK FOR YOU. YOU WILL STILL HAVE TO GO THROUGH MANUALLY 
 
 If you enounter any problems, you can email me at otter.kokinda@gmail.com, but the best way to reach me is through Discord at Panzerschwein#1162. If you message me there, I will probably resond within minutes. 
 
-Instructions:
+INSTRUCTIONS:
 
 First of all, if you are comfortable using Python 3 and installing pip modules, do it that way. The three libraries you will have to install are "gspread", "bs4" and "csv". If you are not comfortable with Python, or never used Python before, I recommend using Repl.it. here is a link to the repl: https://replit.com/@Panzerschwein/iNaturalistSpreadSheetFormatter#main.py
 There should be a blue button that says "fork" on the page when you go to the link. click it. (You may have to login in or create an account if you haven't already). 
@@ -13,8 +13,7 @@ If you have already finished with the rest of the steps in this README, click th
 Lastly, select main.py, and hit Run at the top of the page. input the data when prompted in the termanil on the right side of the screen, and once the code finishes, your spreadsheet should be updated!
 
 
-
-Exporting the CSV File:
+EXPORTING THE CSV FILE
 
 To export the iNaturalist Data, go to https://www.inaturalist.org/observations/export.
 Open another tab and pull up the Observation page for your park. I did Guerrero Park, so the URL looks like this: https://www.inaturalist.org/observations?place_id=144488&quality_grade=research&verifiable=any&view=species&iconic_taxa=Plantae
@@ -28,9 +27,11 @@ Download the zip folder and extract it. Inside, there should be a csv file. rena
 Place that csv file in the same folder with the code and the json file (or just keep it in your download folder if you are using repl).
 
 
-Getting the Google Sheets API Key
+GETTING THE GOOGLE SHEETS API KEY
 
 **Make sure you use a personal gmail for this section, as AustinISD restricts the Google Cloud Platform Service for student accounts**
+
+This section has been having a lot of problems for some reason, I think Google has changed the way they manage their Cloud Dashboard, so I uploaded a my own "client_secret.json" file for you to use instead. Make sure to share the spreasheet you are doing your data on with this email: plearth-shared-scraper@test-project-number-2-310618.iam.gserviceaccount.com  . After you do that, skip this section and go to the FINAL STEPS section at the bottom of the page. I did leave this section in case you wanted to try it out for yourself, but I would highy recommend just using the file I uploaded. 
 
 First you will have to create a Google Sheets API key. To do that you will have to create a new project at this link here: 
 https://console.cloud.google.com/apis/dashboard
@@ -64,6 +65,9 @@ Hit "Continue"
 It should then prompt you to download a json file, download it, and change the file name to "client_secret.json"
 Put that json file in the same folder with the rest of the code (or keep it in your download folder if you are using repl).
 Next, open up the json file with Notepad and look for the line, "client_email". Make sure to share the Google Sheets that you will be using to store your data with that email. 
+
+FINAL STEPS:
+
 Now, navigate to spreadsheetUpdate.py and change SPREADSHEET NAME to what ever your spreadsheet is called in Google Drive. If your spreadsheet is named "Plearth Data" the line should look like this: sh = gc.open("Plearth Data")
 
 
