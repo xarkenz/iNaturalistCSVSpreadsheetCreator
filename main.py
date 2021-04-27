@@ -29,7 +29,7 @@ if not os.path.isfile(source_path): # Source path is not a file or doesn't exist
     exit(1)
 if os.path.isfile(target_path): # Target path points to an existing file
     if str(input(f"A file was detected at the target path '{target_path}'. Running this program will overwrite the file at this path. Proceed anyway?\n[y/n] > ")).lower() in ("y", "yes"):
-        print("--> Target file will be overwritten after filtering is complete. Pressing Ctrl+C (PC) or \u2318+C (Mac) to halt the program during the filtering process can prevent this.")
+        print("--> Target file will be overwritten after filtering is complete. Pressing Ctrl+C (Windows/Linux) or \u2318+. (Mac) to halt the program during the filtering process can prevent this.")
     else:
         cancel = True
         print("--> Operation cancelled.")
