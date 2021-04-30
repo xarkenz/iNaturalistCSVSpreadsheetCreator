@@ -42,7 +42,7 @@ optional arguments:
   -t TARGET, --target TARGET
                         the file path of the target csv
   -x TAXON [TAXON ...], --exclude TAXON [TAXON ...]
-                        species/genera to exclude
+                        taxa to exclude
 ```
 
 This fork does not use the Google API. The modules that needs to be present for this fork to function properly are BeautifulSoup (`bs4`), `argparse`, `csv`, `requests`, and `os`. Some of these are already part of the native Python environment.
