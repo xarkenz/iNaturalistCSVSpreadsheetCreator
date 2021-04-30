@@ -30,15 +30,30 @@ These instructions are for gathering data from a park with boundaries included i
 
 ## Program Instructions
 
-**Usage (may differ depending on OS):** `python3 main.py` OR `python3 main.py <source> <target>`
+**Usage**
+It is recommended that quotation marks be used around each argument after the identifier. (e.g. `-s "file.csv"`)
+```
+usage: main.py [-h] [-s SOURCE] [-t TARGET] [-x TAXON [TAXON ...]]
 
-This fork does not use the Google API. The only module that needs to be installed for this fork is BeautifulSoup (`bs4`). The Python built-in modules `csv`, `requests`, `sys`, and `os` are also used but should be already present.
+optional arguments:
+  -h, --help            show this help message and exit
+  -s SOURCE, --source SOURCE
+                        the file path of the source csv
+  -t TARGET, --target TARGET
+                        the file path of the target csv
+  -x TAXON [TAXON ...], --exclude TAXON [TAXON ...]
+                        species/genera to exclude
+```
 
-A CSV file (`source`) should be obtained from the the section **Exporting the CSV File From iNaturalist**; the filename should be easy to type, as mentioned. This program is not well-tested, so make sure to keep a copy of that file handy in case something goes wrong. While you can put the file anywhere if you use the full file path, it is most convenient to add the file to this folder so the filename can be used alone. The `target` file, on the other hand, is the destination where the output file will go from this program. The name of the target file can be set to any name, but it is recommended not to use an existing filename. If you input a filename only, the output will be created in this folder, but a full file path can be used if the destination is located elsewhere. *Warning: If a file already exists at the target path, this file will be overwritten with the output data! (The program will provide this warning if this is the case.)*
+This fork does not use the Google API. The modules that needs to be present for this fork to function properly are BeautifulSoup (`bs4`), `argparse`, `csv`, `requests`, and `os`. Some of these are already part of the native Python environment.
+
+A CSV file (`source`) should be obtained from the the section **Exporting the CSV File From iNaturalist**; the filename should be easy to type, as mentioned. Just in case, make sure to keep a copy of that file handy. While you can put the file anywhere if you use the full file path, it is most convenient to add the file to this folder so the filename can be used alone. The `target` file, on the other hand, is the destination where the output file will go from this program. The name of the target file can be set to any name, but it is recommended not to use an existing filename. If you input a filename only, the output will be created in this folder, but a full file path can be used if the destination is located elsewhere. *Warning: If a file already exists at the target path, this file will be overwritten with the output data! (The program will provide this warning if this is the case.)*
 
 The next step after the source and target files are prepared and BeautifulSoup is installed is to execute the program. First, open up the command line (Windows: `cmd.exe`; Mac/Linux: `terminal`) and use the `cd` command to [navigate to this folder](https://ss64.com/nt/cd.html). In some operating systems, you can alternatively second-click on this folder in a file manager and open it in the command line.
 
-When you are inside this folder, shown by the folder path to the left of the cursor, you can then enter the command according to the **Usage** line above. By picking the first option, the program can walk you through the process. If you are more comfortable with the process, the second option lets you pass the arguments through the command line, if preferred. After this point, the program should guide you from within the command line from start to finish.
+When you are inside this folder, shown by the folder path to the left of the cursor, you can then enter the command according to the **Usage** syntax above. The `--help` option shows help for the program. The other three options, `--source`, `--target`, and `--exclude`, are optional, but if they are not present, the program will request manual entry. `--exclude` is not a required argument and can be skipped in the program.
+
+To exclude one or more species, the optional argument `--exclude` can be used. To use this argument, enter a comma-separated list surrounded by quotation marks (spacing should not matter) where each item of the list is a scientific name/species (`Genus species`) or a genus (`Genus`). (e.g. `-x "Opuntia engelmannii, Quercus, Toxicodendron radicans"`) The items from this list will override the filter for these particular taxon so they are not included in the output. Higher-level taxa cannot be used to exclude species.
 
 **NOTE:** The program can be manually stopped at any time without making any changes via a keyboard interrupt (Windows/Linux: `Ctrl`+`C`; Mac: &#8984;+`.`).
 
