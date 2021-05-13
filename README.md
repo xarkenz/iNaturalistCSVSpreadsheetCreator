@@ -1,5 +1,7 @@
 # iNaturalistWoodyPlantFilter-old-format
 
+**NOTE:** This branch is no longer supported.
+
 This program is a fork of Panzerschwein's iNaturalistCSVSpreadsheetCreator, and aims to filter through a CSV of plants documented in iNaturalist to remove the plants that are not considered woody. Read `README.md` (this document) for instructions, and use at your own risk. Do note that some of the steps may be confusing. If you find something confusing, feel free to contact me (info below) with any questions you have, so I can help and/or clarify.
 
 There is one major difference between the original project and this fork; this fork generates a CSV output file whereas the original outputs directly onto a Google Sheet. I would recommend using the one that is more convenient for your purposes. The code is also reworked in most areas to look/run smoother, but a lot of the credit for the original code goes to Panzerschwein.
